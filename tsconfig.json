@@ -1,0 +1,52 @@
+// {
+//   "compilerOptions": {
+//     "module": "commonjs",
+//     "declaration": true,
+//     "removeComments": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "allowSyntheticDefaultImports": true,
+//     "target": "ES2021",
+//     "sourceMap": true,
+//     "outDir": "./dist",
+//     "baseUrl": "./",
+//     "incremental": true,
+//     "skipLibCheck": true,
+//     "strictNullChecks": false,
+//     "noImplicitAny": false,
+//     "strictBindCallApply": false,
+//     "forceConsistentCasingInFileNames": false,
+//     "noFallthroughCasesInSwitch": false
+//   }
+// }
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true, // AWESOME (NOTE: Decorators are an experimental feature that may change in future releases.)
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "~grpc/*": ["src/__grpc/*"],
+      "@resources/*": ["src/resources/*"],
+      "~utils/*": ["src/utils/*"],
+      "~templates/*": ["src/templates/*"],
+      "api": ["src/api/index.ts"]
+    }
+  }
+}
